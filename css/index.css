@@ -1,0 +1,411 @@
+/* Importes */
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+
+/* ........ */
+
+/* grid */
+
+header, aside, .info-1, .proyectos, .info-2, .servicios, .articulo-1, .articulo-2, .articulo-3, .contratame, footer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#page{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-template-areas: 
+    "a-header a-header a-header"
+    "a-aside a-info-1 a-proyectos"
+    "a-aside a-info-2 a-info-2"
+    "a-servicios a-servicios a-servicios"
+    "a-articulo-1 a-articulo-2 a-articulo-3"
+    "a-articulo-1 a-articulo-2 a-articulo-3"
+    "a-contratame a-contratame a-contratame"
+    "a-footer a-footer a-footer"
+    ;
+    gap: 20px;
+}
+
+header {
+    grid-area: a-header;
+    justify-content: center;
+}
+
+aside {
+    grid-area: a-aside;
+}
+
+.info-1 {
+    grid-area: a-info-1;
+}
+
+.proyectos {
+    grid-area: a-proyectos;
+}
+
+.info-2 {
+    grid-area: a-info-2;
+}
+
+.servicios {
+    grid-area: a-servicios;
+}
+
+.articulo-1 {
+    grid-area: a-articulo-1;
+}
+
+.articulo-2 {
+    grid-area: a-articulo-2;
+}
+
+.articulo-3 {
+    grid-area: a-articulo-3;
+}
+
+.contratame {
+    grid-area: a-contratame;
+}
+
+footer {
+    grid-area: a-footer;
+}
+
+/* .... */
+
+/* Estilos de la pagina */
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+header {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border: 1px;
+    box-shadow: 2px 10px 10px #888888;
+    position: fixed;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+header a {
+    position: right;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 50px;
+    color: black;
+
+}
+
+aside {
+    border: 1px solid rgb(255, 255, 255);
+    padding-right: 40px;
+    border-radius: 20%;
+    background-color: white;
+    box-shadow: 2px 10px 10px #888888;
+    margin-left: 90px;
+    margin-right: 150px;
+    height: 200px;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+    font-family: calibri;
+}
+
+aside a:hover {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+aside li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.info-1 {
+    margin-right: 600px;
+    margin-top: 150px;
+    transform: translate(-13%, -42%);
+    /* flex-direction: column; */
+    margin-left: 20px;
+    width: 200px;
+    height: 450px;
+    align-items: flex-start;
+}
+
+.info-1 h1 {
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+
+.info-1 h3 {
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.info-1 p {
+    font-family: myriad pro regular;
+    color: #3e3d3d;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.info-1 button {
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    background-color: rgb(114, 114, 114);
+    border-style: none;
+    box-shadow: 2px 10px 10px #888888;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 10px;
+    margin-left: 130px;
+}
+
+.info-1 img {
+    width: 400px;
+    padding-left: 60px;
+}
+
+.info-1 button:hover {
+    background-color: black;
+    color: white;
+}
+
+.info-1-test-2 {
+    flex-direction: column;
+}
+
+.proyectos {
+    border: 1px solid rgb(255, 255, 255);
+    padding-right: 40px;
+    border-radius: 20%;
+    background-color: white;
+    box-shadow: 2px 10px 10px #888888;
+    height: 200px;
+    width: 300px;
+}
+
+.proyectos p {
+    margin-left: 20px;
+    font-family: calibri;
+}
+
+.proyectos ul {
+    list-style: none;
+}
+
+.proyectos li {
+    margin-bottom: 10px;
+}
+
+.proyectos a {
+    text-decoration: none;
+    color: black;
+    font-family: calibri;
+}
+
+.proyectos a:hover {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+.info-2 {
+    margin-top: 250px;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20%;
+    background-color: white;
+    box-shadow: 2px 10px 10px #888888;
+    height: 400px;
+    width: 800px;
+    align-items: flex-start;
+}
+
+.info-2 h2 {
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.info-2 h3 {
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 40px;
+}
+
+.info-2 p {
+    color: #7e7d7d;
+    font-family: calibri;
+    font-size: 16px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.info-2 button {
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    background-color: rgb(114, 114, 114);
+    border-style: none;
+    box-shadow: 2px 10px 10px #888888;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 10px;
+    margin-left: 320px;
+}
+
+.info-2 button:hover {
+    background-color: black;
+    color: white;
+}
+
+.servicios {
+    margin-top: 540px;
+    flex-direction: column;
+    background-color: white;
+    height: 200px;
+}
+
+.servicios h1 {
+    margin-top: 0px;
+    margin-left: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.servicios p {
+    font-family: calibri;
+    padding-left: 40px;
+}
+
+.articulo-1 {
+    margin-top: 600px;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 200px;
+}
+
+.articulo-2 {
+    margin-top: 600px;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+.articulo-3 {
+    margin-top: 600px;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    font-family: calibri;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.articulo-1 button {
+    border-style: none;
+    border-radius: 5px;
+}
+
+.articulo-1 button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.articulo-2 button {
+    border-style: none;
+    border-radius: 5px;
+}
+
+.articulo-2 button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.articulo-3 button {
+    border-style: none;
+    border-radius: 5px;
+}
+
+.articulo-3 button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.contratame {
+    margin-top: 500px;
+    color: white;
+    background-color: black;
+    height: 200px;
+    flex-direction: column;
+    font-family: calibri;
+}
+
+.contratame button {
+    border-style: none;
+    border-radius: 5px;
+}
+
+.contratame button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+footer {
+    margin-top: 500px;
+    height: 20px;
+    background-color: white;
+    justify-content: center;
+}
+/* .................... */
